@@ -10,13 +10,7 @@ class Scraper < Object
   BOTH    = 2
   MAIN_IMAGE_URL = "images.craigslist.org"
   
-  def initialize(gender)
-    cities = [
-      "austin",
-      "miami",
-      "atlanta",
-      "washingtondc"
-      ]
+  def initialize(gender,cities)
       
     genders = {}
     genders[ "dudes" ] = "m4w" if (gender.eql?(MEN) or gender.eql?(BOTH))
